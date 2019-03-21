@@ -18,5 +18,15 @@
   "bugs": {
     "url": "https://github.com/ardent139/mysite/issues"
   },
-  "homepage": "https://github.com/ardent139/mysite#readme"
+  "homepage": "https://github.com/ardent139/mysite#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp.spritesmith": "^6.9.0",
+    "node-sass": "^4.11.0",
+    "rimraf": "^2.6.3"
+  }
 }
