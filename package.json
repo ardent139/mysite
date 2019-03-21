@@ -1,0 +1,22 @@
+{
+  "name": "matrix",
+  "version": "1.0.0",
+  "description": "#",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardent139/mysite.git"
+  },
+  "keywords": [
+    "matrix"
+  ],
+  "author": "Dmitry Zorin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ardent139/mysite/issues"
+  },
+  "homepage": "https://github.com/ardent139/mysite#readme"
+}
