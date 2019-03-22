@@ -5,15 +5,13 @@ const pug = require('gulp-pug');
 const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
 const rename = require("gulp-rename");
-const autoprefixer = require('gulp-autoprefixer');
-const sourcemaps = require('gulp-sourcemaps');
 
 
 // Static server
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            port:9000,
+            port:8080,
             baseDir: "build"
         }
     });
@@ -23,7 +21,7 @@ gulp.task('server', function() {
 // Gulp Pug
 
 gulp.task('templates:compile', function buildHTML() {
-    return gulp.src('source/template/index.pug')
+    return gulp.src('source/template/index')
     .pipe(pug({
       pretty: true
     }))

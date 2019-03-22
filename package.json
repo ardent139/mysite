@@ -31,5 +31,9 @@
     "gulp.spritesmith": "^6.9.0",
     "node-sass": "^4.11.0",
     "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "normalize.scss": "^0.1.0"
   }
 }
