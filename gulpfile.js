@@ -11,7 +11,6 @@ const rename = require("gulp-rename");
 gulp.task('server', function() {
     browserSync.init({
         server: {
-            port:8080,
             baseDir: "build"
         }
     });
@@ -21,7 +20,7 @@ gulp.task('server', function() {
 // Gulp Pug
 
 gulp.task('templates:compile', function buildHTML() {
-    return gulp.src('source/template/index')
+    return gulp.src('source/template/index.pug')
     .pipe(pug({
       pretty: true
     }))
@@ -71,7 +70,7 @@ gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
 
 //Watchers
 gulp.task('watch', function(){
-    gulp.watch('source/templates/**/*.pug', gulp.series('templates:compile'));
+    gulp.watch('source/template/**/*.pug', gulp.series('templates:compile'));
     gulp.watch('source/styles/**/*.scss', gulp.series('styles:compile'));
 });
 
