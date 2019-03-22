@@ -13,3 +13,11 @@ header.header
     .container
         .header__bottom
             .logo: img(src="images/logo.png", alt="matrix")
+            nav.nav
+            - var items = ['Home', 'About Us', 'Our Approch', 'Our Work']
+            each item in items
+                if item == 'Home'
+                    a.nav__link.nav__link--active(href="#")= item
+                else
+                    a.nav__link(href="#")= item
+            a.button.header--button.button--red(href="#") Free Consultation
