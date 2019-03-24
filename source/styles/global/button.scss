@@ -5,7 +5,7 @@
     text-decoration: none;
     color: #fff;
 
-    &--red {
+    &__red {
         background: #de2b24;
         transition: 0.3s;
 
@@ -14,7 +14,7 @@
         }
     }
 
-    &--yellow {
+    &__yellow {
         background: #f8cd53;
 
         &:hover {
@@ -22,7 +22,7 @@
         }
     }
 
-    &--text-uppercase {
+    &_text_uppercase {
         text-transform: uppercase;
     }
 
