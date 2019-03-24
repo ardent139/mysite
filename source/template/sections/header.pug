@@ -1,23 +1,9 @@
 header.header
     .header__top
         .container
-            .contacts
-                a.contact(href="tel:+79000426411")
-                    i.fa.fa-mobile(aria-hidden="true")
-                    span.contact__text +79000426411
-                a.contact(href="mailto:ardent139@gmail.com")
-                    i.fa.fa-envelope.contact__icon.contact__icon__email(aria-hidden="true")
-                    span.contact__text ardent139@gmail.com
-                a.facebook-icon(href="facebook.com")
-                    i.fa.fa-facebook(aria-hidden="true")
+            include contact
     .container
         .header__bottom
             .logo: img(src="images/logo.png", alt="matrix")
-            nav.nav
-            - var items = ['Home', 'About Us', 'Our Approch', 'Our Work']
-            each item in items
-                if item == 'Home'
-                    a.nav__link.nav__link--active(href="#")= item
-                else
-                    a.nav__link(href="#")= item
+            include nav
             a.button.header--button.button--red(href="#") Free Consultation

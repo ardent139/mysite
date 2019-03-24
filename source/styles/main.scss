@@ -1,6 +1,12 @@
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
 @import "../../node_modules/normalize.scss/normalize";
-@import "sections/header.scss";
-body {
-    background-color:#bdbdbd;
-}
+
+@import "sections/header";
+
+@import "global/fonts";
+@import "global/base";
+@import "global/common";
+@import "global/vars";
+@import "global/sprite";
+@import "global/button";
+@import "sections/nav.scss"
