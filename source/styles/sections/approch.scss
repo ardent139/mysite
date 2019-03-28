@@ -25,8 +25,22 @@
             .approch__text {
                 padding: 70px 90px;
             }
+
+            .approch__step {
+                right: 0;
+                left: -52px;
+            }
         }
     }
+
+    &__image {
+        position: relative;
+        max-width: 340px;
+        max-height: 236px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
 
     &__picture {
         display: block;
@@ -40,5 +54,42 @@
         width: 64%;
         padding: 70px 70px 55px 90px;
         font-size: 0.875rem;
+    }
+
+    &__step {
+        position: absolute;
+        left: 85%;
+        transform: translateY(-165%);
+        right: -58px;
+        width: 103px;
+        height: 103px;
+        padding-top: 10px;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        text-align: center;
+        font-size: 1.25rem;
+        background-color: #de2b24;
+        color: #fff;
+
+        &::before {
+            content: counter(count);
+            counter-increment: count;
+            display: block;
+            font-family: $ff-step;
+            font-size: 3rem;
+            line-height: 1;
+            color: #fff;
+        }
+    }
+
+    &__title {
+        margin-bottom: 6px;
+        font-size: 1.125rem;
+       font-family: $ff-main-bold;
+    }
+
+    &__descripction {
+        margin: 0;
+        line-height: 1.5;
     }
 }
