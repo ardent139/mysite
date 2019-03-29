@@ -1,0 +1,20 @@
+- var linkitem = ['facebook-official', 'twitter', 'google-plus', 'linkedin']
+- var linkUrl = ['facebook.com', 'twitter.com', 'google.com', 'linkedin.com']
+
+footer.footer
+    .footer__top
+        .container
+            .footer__title Get in touch
+            .footer__links
+                each item, key in linkitem
+                    a.footer__social(href="http://" + linkUrl[key] target="_blank")
+                        i(class="fa fa-" + item aria-hidden="true")
+                            span.visually-hidden=linkitem
+            .footer__text Subscribe to our newsletter to stay update what is new
+            form(action="#" method="post")
+                .footer__field: input.footer__input(type="email" placeholder="Email Address")
+                button(type="submit").button Subscribe
+
+
+    .footer__bottom
+        .footer__copy Cssautor.com &copy; 2014 All Rights Reserved
