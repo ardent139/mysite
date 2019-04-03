@@ -4,16 +4,24 @@
 
         &__list {
             display: inline-flex;
-            justify-content: space-between;
-            text-align: top;
+            justify-content: center;
+            text-align: center;
             width: 30%;
             flex-wrap: wrap;
-            margin: 0px;
+            margin: 0;
             padding: 0 50px;
+            
+            @media (max-width: 960px) {
+                display: flex;
+                width: 100%;
+            }
+            
+            
         }
 
         &__item {
             width: 100%;
+            
         }
 
         &__header {
