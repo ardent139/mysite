@@ -111,3 +111,4 @@ typings/
 build
 vs/**/*
 .vs/**/*
+package-lock.json

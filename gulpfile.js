@@ -5,6 +5,8 @@ const pug = require('gulp-pug');
 const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
 const rename = require("gulp-rename");
+const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
 
 
 // Static server
@@ -81,3 +83,21 @@ gulp.task('default', gulp.series(
   gulp.parallel('watch', 'server')
 )
 );
+
+// concat 
+
+gulp.task('scripts', function() {
+  return gulp.src('./lib/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./dist/'));
+});
+
+//compress
+
+gulp.task('compress', function () {
+  return pipeline(
+        gulp.src('lib/*.js'),
+        uglify(),
+        gulp.dest('dist')
+  );
+});
